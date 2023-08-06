@@ -7,17 +7,13 @@ const APIToolkit = require('apitoolkit-express').default
 const app = express();
 
 const port = 8000;
+(async ()=>{
+const apitoolkit =  await APIToolkit.NewClient({ apiKey: process.env.API_KEY})
+app.use(apitoolkit.expressMiddleware);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// APItoolkit middleware starts here
-
-
-  const apitoolkit =  APIToolkit.NewClient({ apiKey: process.env.API_KEY})
-
-
-  app.use(apitoolkit.expressMiddleware);
 
 // APYtoolkit middleware ends here  
 
@@ -74,3 +70,4 @@ app.listen(port, () => {
   console.log(`app listening at http://localhost:${port}`);
 });
 
+})();
