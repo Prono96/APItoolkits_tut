@@ -1,0 +1,32 @@
+[
+  {
+    "name": "John Doe",
+    "age": 15,
+    "class": "10th Grade",
+    "school": "ABC High School"
+  },
+  {
+    "name": "Promise Mark",
+    "age": "25",
+    "class": "graduate",
+    "school": "Uni Lag"
+  },
+  {
+    "name": "PJ Awilo",
+    "age": 25,
+    "class": "graduate",
+    "school": "Uni Lag"
+  },
+  {
+    "name": "Sly Satoshi",
+    "age": 25,
+    "class": "graduate",
+    "school": "Uni Dev"
+  },
+  {
+    "name": "Speed Darlington",
+    "age": 25,
+    "class": "graduate",
+    "school": "Uni Lag"
+  }
+]
